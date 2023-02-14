@@ -31,14 +31,14 @@ type Props = {
 export function Post({data}: Props) {
   return (
     <View style={styles.post}>
-        <PostHeader username={data.username} location={data.location}/>
-        <PostPhoto source={data.cover}/>
+      <PostHeader username={data.username} location={data.location}/>
+      <PostPhoto source={data.cover}/>
 
-        <View style={styles.postFooter}>        
-          <PostOptions />
-          <PostAbout avatar={data.lastLiked.avatar} likes={data.likes}/>
-          <PostDescription value={data.description}/>
-        </View>
+      <View style={styles.postFooter}>        
+        <PostOptions />
+        <PostAbout avatar={data.lastLiked.avatar} likes={data.likes}/>
+        <PostDescription value={data.description}/>
       </View>
+    </View>
   );
 }
